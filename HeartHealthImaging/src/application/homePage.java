@@ -73,6 +73,12 @@ public class homePage {
 			}
 		);
 		
+		patientViewButton.setOnAction(event -> {
+			patientView view = new patientView();
+			primaryStage.setScene(view.get_scene());
+			primaryStage.show();
+		});
+		
 		
 		scene = new Scene(root,400,400);
 		

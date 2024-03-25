@@ -109,8 +109,8 @@ public class patientIntakeScene {
 		return id;
 	}
 	public void save_intake(int id, String firstName, String lastName, String email, String phoneNumber, String healthHistory, String insuranceId) {
-		try {
-			BufferedWriter intakeFile = new BufferedWriter(new FileWriter(id + "_PatientInfo.txt"));
+		try (BufferedWriter intakeFile = new BufferedWriter(new FileWriter(id + "_PatientInfo.txt"))) {
+
 			intakeFile.write(firstName + ", " + lastName + ", " + email + ", " + phoneNumber + ", " + healthHistory + ", " + insuranceId);
 			intakeFile.close();
 		}
