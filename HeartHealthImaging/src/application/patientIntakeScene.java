@@ -83,7 +83,7 @@ public class patientIntakeScene {
 		    String phoneNumberText = phoneNumber.getText();
 		    String healthHistoryText = healthHistory.getText();
 		    String insuranceIdText = insuranceId.getText();
-;			save_intake(id, firstName, lastName, emailText, phoneNumberText, healthHistoryText, insuranceIdText);
+			save_intake(id, firstName, lastName, emailText, phoneNumberText, healthHistoryText, insuranceIdText);
 		});
 		
 		root.setCenter(form);
